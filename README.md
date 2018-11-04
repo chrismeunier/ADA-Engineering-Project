@@ -1,4 +1,5 @@
 # Biases and sentimentality in online newspapers
+Jean-Marc Bejjani - Luca Montanelli - Christophe Muller
 
 ## Abstract
 In the current media context, access to objective information is becoming more and more critical. People want to build strong opinions on various subjects that have direct impact on their lives. With the rise of misinformation and biased untraceable sources flooding our social media feed, having a tool to understand the information displayed in front of us could be very useful to build an  more informed opinion on a given subject.
