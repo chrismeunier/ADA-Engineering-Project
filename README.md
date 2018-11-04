@@ -6,9 +6,7 @@ In the current media context, access to objective information is becoming critic
 
 The goal of our project is to use data analysis techniques on a large news dataset (NOW database) to help people to get a better understand the information they are receiving.
 
-By analysing the articles from various newspapers coming from different locations across time, we can create a topic model of our data using topic modeling techniques like Latent Dirichlet Allocation. This will give the articles dimensionality. 
-
-From this topic model we want to track the evolution of the general sentiment relative to each of these topics across time and location. This will give people a way to understand the past and current sentiment relative to a certain topic they might be interested in. 
+By analysing the articles from various newspapers coming from different locations across time, we can create a topic model of our data using topic modeling techniques like Latent Dirichlet Allocation. From this topic model we want to track the evolution of the general sentiment relative to each of these topics across time and location. This will give people a way to understand the past and current sentiment relative to a certain topic they might be interested in. 
 
 Also tracking the changes in the main topic of each newspaper across time can tell a lot about the biases of a certain journal relative to a certain topic. 
 
