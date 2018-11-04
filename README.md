@@ -26,8 +26,11 @@ The articles themselves are stored in files classified according to the year, mo
 *List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.*
 
 # A list of internal milestones up until project milestone 2
-*Add here a sketch of your planning for the next project milestone.*
-
+- Understand the complete structure of the dataset and how to clean it.
+- Clean the data base according to what is necessary.
+- Understand how to sample our data to create a balanced topic model.
+- ....
 # Questions for TAs
 
-*Add here some questions you have for us, in general or project-specific.*
+- Knowing that different countries and news sources have largely different number of articles how should we perform our topic modeling without biasing our data towards a certain source or country?
+
