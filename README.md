@@ -23,8 +23,11 @@ Finally we would like to create a classification method of articles so we can cl
 ## Dataset
 We will use the *News On the Web* dataset (NOW) as described on [corpusdata](https://www.corpusdata.org/intro.asp). It contains articles from online newspapers coming from 20 english-speaking countries (USA, GB, Australia, India, etc) ranging from 2010 to today. This data represents more than 6 billion words stored in many many text files, it is accessible on the cluster and we will extract some parts of it to test the implementation of our methods locally before running it on the whole dataset on the cluster.
 
-These text files contain a lexicon listing all words used in the articles and linking them with "lemmas" to simplify reading (e.g. a conjugated verb “is” has a lemma “be” to simplify word processing). We also have a list of all articles where we find their unique (we hope) id, their word counts, the country and name of newspaper it was published in, and an article headline. 
-The articles themselves are stored in files classified according to the year, month and country of publication. So all articles (starting with their id) of a given month published in one country are found in the same file, this means we will need to process them accordingly to extract information for each article separately.
+These text files contain a lexicon listing all words used in the articles and linking them with "lemmas" to simplify reading (e.g. a conjugated verb “is” has a lemma “be” to simplify word processing). We also have a list of all articles where we find their unique id, their word counts, the country and name of newspaper it was published in, and an article headline. 
+
+The articles themselves are stored in files classified according to the year, month and country of publication. So all articles (starting with their id) of a given month published in one country are found in the same file, this means we will need to process them accordingly to extract information for each article separately. 
+
+All the articles files have a WLP (Word-Lemma-PartOfSpeech) counterpart file containing the ordered list of all words used in these articles. With each word is found its lemma and PoS. These files are the most promising way to treat our data since we can directly work on the lemmas as if it was a pre-processed dataset with more simple and meaningful words.
 
 ## A list of internal milestones up until project milestone 2
 - Understand the complete structure of the dataset and how to clean it.
