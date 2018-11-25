@@ -7,7 +7,7 @@ The goal of our project is to use data analysis techniques on a large newspapers
 
 By analysing the articles from various newspapers coming from different locations across time, we will create a topic model of our data using topic modeling techniques like Latent Dirichlet Allocation. From this topic model we want to track the evolution of the general sentiment relative to each of these topics across time and location. This will give people a way to understand the past and current sentiment relative to a certain topic they might be interested in. Here by sentiment we mean how much the article has a positive/optimistic view on the topic or a negative/pessimistic point of view.
 
-We will try to categorize the newspapers as positive, neutral or negative regarding a given previously identified topic. This will be done firstly inside the countries of the dataset and then internationally since some topics and most events are specific to countries.
+Our main goal is to categorize the newspapers as positive, neutral or negative regarding a given previously identified topic. This will be done firstly inside the countries of the dataset and then internationally since some topics and most events are specific to countries.
 
 Also tracking the changes in the main topic of each newspaper across time could tell a lot about the biases of a certain newspaper relatively to a certain topic. 
 
