@@ -11,19 +11,19 @@ We will try to categorize the newspapers as positive, neutral or negative regard
 
 Also tracking the changes in the main topic of each newspaper across time could tell a lot about the biases of a certain newspaper relatively to a certain topic. 
 
-Finally we want to create a classification of newspapers so we can classify any new article into a relative topics or political orientation. 
+Finally we would like to create a classification method of articles so we can classify any new article as being part of an identified topic and have an idea of its general sentimant.
 
 ## Research questions
   - Are newspapers optimistic or pessimistic when talking about certain subjects?
-  - Can we succesfully classify articles to direct the readers where to go?
-  - Have some big events changed the way newspapers perceive topics?
-  - Are countries drastically different in the way their newspapers treat events?
-  - Have the principal topics changed over the years? Can this tell us a change of mentality? Or where we are headed?
+  - Can we succesfully classify articles to direct the readers where to go? So that if you don't like how some newspaper is always overly dramatic and negative over some subject, can you find an other newspaper to read for a more peaceful and positive report?
+  - Have some big events changed the way newspapers perceive topics? We will try to find an event with a large impact on a specific topic and compare the sentiment of articles related to this topic before and after the event.
+  - Are countries drastically different in the way their newspapers treat events? For an event of international impact do we find clear differences between the perception of this subject between countries? Does it tell us anything about alliances or the general national political landscape of a given country?
+  - Have the principal topics (or our perception of them) changed over the years? Can this tell us a change of mentality? Or where we are headed?
 
 ## Dataset
 We will use the *News On the Web* dataset (NOW) as described on [corpusdata](https://www.corpusdata.org/intro.asp). It contains articles from online newspapers coming from 20 english-speaking countries (USA, GB, Australia, India, etc) ranging from 2010 to today. This data represents more than 6 billion words stored in many many text files, it is accessible on the cluster and we will extract some parts of it to test the implementation of our methods locally before running it on the whole dataset on the cluster.
 
-These text files contain a lexicon linking words together we can use to read words as other words (e.g. a conjugated verb “is” could be read as “be” to simplify word processing). We also have a list of all articles where we find their unique (we hope) id, their word counts, the country and name of newspaper it was published in, and an article headline. 
+These text files contain a lexicon listing all words used in the articles and linking them with "lemmas" to simplify reading (e.g. a conjugated verb “is” has a lemma “be” to simplify word processing). We also have a list of all articles where we find their unique (we hope) id, their word counts, the country and name of newspaper it was published in, and an article headline. 
 The articles themselves are stored in files classified according to the year, month and country of publication. So all articles (starting with their id) of a given month published in one country are found in the same file, this means we will need to process them accordingly to extract information for each article separately.
 
 ## A list of internal milestones up until project milestone 2
