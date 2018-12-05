@@ -1,0 +1,20 @@
+Topic 0:
+0.0090*health + 0.0062*cancer + 0.0058*patient + 0.0055*drug + 0.0053*dr + 0.0051*disease + 0.0051*medical + 0.0045*doctor + 0.0040*study + 0.0038*food
+Topic 1:
+0.0046*city + 0.0043*film + 0.0026*dog + 0.0026*building + 0.0026*street + 0.0025*house + 0.0024*park + 0.0023*council + 0.0022*marijuana + 0.0021*people
+Topic 2:
+0.0070*company + 0.0063*market + 0.0054*price + 0.0054*bank + 0.0053*tax + 0.0050*business + 0.0046*cent + 0.0044*growth + 0.0041*investment + 0.0040*financial
+Topic 3:
+0.0059*party + 0.0055*vote + 0.0055*trump + 0.0050*election + 0.0040*fish + 0.0038*republican + 0.0034*political + 0.0033*candidate + 0.0033*murder + 0.0032*voter
+Topic 4:
+0.0051*technology + 0.0051*design + 0.0043*model + 0.0039*system + 0.0036*data + 0.0036*energy + 0.0035*climate + 0.0034*farm + 0.0032*power + 0.0032*material
+Topic 5:
+0.0109*game + 0.0081*team + 0.0073*win + 0.0070*player + 0.0059*play + 0.0057*league + 0.0052*score + 0.0051*club + 0.0049*cup + 0.0044*sport
+Topic 6:
+0.0055*pakistan + 0.0054*indian + 0.0044*war + 0.0036*colombia + 0.0036*military + 0.0036*attack + 0.0034*kashmir + 0.0034*army + 0.0033*state + 0.0033*camp
+Topic 7:
+0.0134*music + 0.0125*vegas + 0.0104*de + 0.0102*la + 0.0102*album + 0.0088*tour + 0.0055*dress + 0.0054*shenandoah + 0.0053*museum + 0.0053*review-journal
+Topic 8:
+0.0055*police + 0.0049*court + 0.0039*comment + 0.0032*user + 0.0029*cookie + 0.0028*site + 0.0027*use + 0.0026*e-mail + 0.0026*content + 0.0025*media
+Topic 9:
+0.0076*child + 0.0072*woman + 0.0071*school + 0.0057*student + 0.0047*girl + 0.0042*family + 0.0040*mother + 0.0039*life + 0.0037*parent + 0.0033*baby
