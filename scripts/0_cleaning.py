@@ -3,7 +3,6 @@
 ###############################################################
 
 
-
 import re
 from pyspark.sql import *
 from pyspark.sql.functions import *
@@ -16,8 +15,8 @@ sc = spark.sparkContext
 
 
 WLP_FILE = '/datasets/now_corpus/corpus/wlp/*-*-*.txt'
-BOTTOM_PERCENT= 0.8
 TOP_PERCENT = 0.95
+VOCABSIZE = 10000
 
 
 
@@ -45,9 +44,8 @@ wlp_nostop = wlp_nopos.filter(~wlp['lemma'].isin(stopwords))
 lemma_freq = wlp_nostop.groupBy('lemma').count().sort('count', ascending=False)
 
 #removal
-[bottom,top] = lemma_freq.approxQuantile('count', [BOTTOM_PERCENT,TOP_PERCENT], 0.01)
-lemma_tokeep = lemma_freq.filter(lemma_freq['count']>bottom).filter(lemma_freq['count']<top)
-print('Number of lemmas left: %d'%lemma_tokeep.count())
+top = lemma_freq.approxQuantile('count', [TOP_PERCENT], 0.01)
+lemma_tokeep = lemma_freq.filter(lemma_freq['count']<top)
 
 wlp_nostop.registerTempTable('wlp_nostop')
 lemma_tokeep.registerTempTable('lemma_tokeep')
@@ -60,18 +58,17 @@ INNER JOIN lemma_tokeep ON wlp_nostop.lemma = lemma_tokeep.lemma
 
 wlp_kept = spark.sql(query)
 wlp_bytext = wlp_kept.groupBy('textID').agg(collect_list('lemma')).sort('textID').withColumnRenamed('collect_list(lemma)','lemma_list')
-print('Number of documents: %d'%wlp_bytext.count())
 
 
 
-############## TF-IDF stage ##############
+############## Transformation stage ##############
 #tf
-cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features").fit(wlp_bytext)
-result_cv = cvmodel.transform(wlp_bytext)
+cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features", vocabSize=VOCABSIZE).fit(wlp_bytext)
+result_cv = cvmodel.transform(wlp_bytext).drop('lemma_list')
 
 #idf
 idfModel = IDF(inputCol="raw_features", outputCol="non_norm_features").fit(result_cv)
-result_tfidf = idfModel.transform(result_cv).drop('lemma_list','raw_features')
+result_tfidf = idfModel.transform(result_cv).drop('raw_features')
 
 #normalised (by default euclidean norm)
 norm = Normalizer(inputCol="non_norm_features", outputCol="features")
@@ -79,7 +76,7 @@ tfidf_norm = norm.transform(result_tfidf).drop('non_norm_features')
 
 
 
-############## Saving stage ##############
+############## Saving stage ##############/datasets/now_corpus/corpus/wlp
 #saving dataframe
 tfidf_norm.write.mode('overwrite').parquet('tfidf_all.parquet')
 #saving vocabulary from CountVectorizer
