@@ -57,7 +57,7 @@ INNER JOIN lemma_tokeep ON wlp_nostop.lemma = lemma_tokeep.lemma
 """
 
 wlp_kept = spark.sql(query)
-wlp_bytext = wlp_kept.groupBy('textID').agg(collect_list('lemma')).sort('textID').withColumnRenamed('collect_list(lemma)','lemma_list').repartition(NPARTITION,'lemma').persist()
+wlp_bytext = wlp_kept.groupBy('textID').agg(collect_list('lemma')).sort('textID').withColumnRenamed('collect_list(lemma)','lemma_list').repartition(NPARTITION,'lemma_list').persist()
 
 
 
