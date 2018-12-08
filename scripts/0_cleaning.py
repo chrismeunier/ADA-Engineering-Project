@@ -29,7 +29,7 @@ lines = wlp_rdd.map(lambda r: r.split('\t'))
 
 #identify the columns
 wlp_schema = lines.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2],lemma=r[3],pos=r[4]))
-wlp = spark.createDataFrame(wlp_schema).repartition(NPARTITION,'lemma').persist() #this partition propagates and so does not need to be repeated
+wlp = spark.createDataFrame(wlp_schema) #.repartition(NPARTITION,'lemma').persist() #this partition propagates and so does not need to be repeated
 
 
 ############## Cleaning stage ##############
