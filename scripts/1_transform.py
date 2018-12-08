@@ -27,14 +27,14 @@ result_cv = cvmodel.transform(wlp_bytext).drop('lemma_list').repartition(NPARTIT
 idfModel = IDF(inputCol="raw_features", outputCol="non_norm_features").fit(result_cv)
 result_tfidf = idfModel.transform(result_cv).drop('raw_features')
 
-#normalised (by default euclidean norm)
-norm = Normalizer(inputCol="non_norm_features", outputCol="features")
-tfidf_norm = norm.transform(result_tfidf).drop('non_norm_features')
+#normalised (by default euclidean norm) NOT DONE FOR NOW BECAUSE ACTUALLY MAKES IT WORSE !
+#norm = Normalizer(inputCol="non_norm_features", outputCol="features")
+#tfidf_norm = norm.transform(result_tfidf).drop('non_norm_features')
 
 
 
 ############## Saving stage ##############/datasets/now_corpus/corpus/wlp
 #saving dataframe
-tfidf_norm.write.mode('overwrite').parquet('tfidf_all.parquet')
+result_tfidf.write.mode('overwrite').parquet('tfidf_all.parquet')
 #saving vocabulary from CountVectorizer
 sc.parallelize(cvmodel.vocabulary).saveAsTextFile('voc.txt')
