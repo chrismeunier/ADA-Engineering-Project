@@ -1,20 +1,20 @@
 Topic 0:
-0.0016*school + 0.0016*time + 0.0015*country + 0.0014*national + 0.0014*people + 0.0014*court + 0.0014*big + 0.0014*feel + 0.0013*award + 0.0013*service
+0.0127*police + 0.0103*court + 0.0077*drug + 0.0060*arrest + 0.0059*case + 0.0052*murder + 0.0047*hospital + 0.0045*patient + 0.0042*medical + 0.0042*officer
 Topic 1:
-0.0021*business + 0.0018*give + 0.0016*need + 0.0015*police + 0.0015*clear + 0.0014*life + 0.0014*full + 0.0014*relationship + 0.0013*system + 0.0013*leader
+0.0084*child + 0.0071*woman + 0.0058*school + 0.0052*girl + 0.0044*family + 0.0042*life + 0.0041*book + 0.0040*parent + 0.0037*people + 0.0035*film
 Topic 2:
-0.0027*need + 0.0019*police + 0.0018*start + 0.0015*comment + 0.0015*post + 0.0014*benefit + 0.0014*register + 0.0013*early + 0.0013*work + 0.0013*family
+0.0058*company + 0.0045*business + 0.0038*project + 0.0038*tax + 0.0035*industry + 0.0034*service + 0.0031*investment + 0.0029*management + 0.0028*government + 0.0028*development
 Topic 3:
-0.0019*city + 0.0019*need + 0.0015*time + 0.0015*rise + 0.0015*present + 0.0014*campaign + 0.0014*story + 0.0013*standard + 0.0013*return + 0.0013*comment
+0.0071*cookie + 0.0063*site + 0.0045*website + 0.0045*hotel + 0.0040*visit + 0.0040*garden + 0.0038*rent + 0.0038*store + 0.0037*museum + 0.0037*visa
 Topic 4:
-0.0017*need + 0.0017*log + 0.0015*change + 0.0015*court + 0.0015*people + 0.0014*show + 0.0014*leave + 0.0013*use + 0.0012*state + 0.0012*drive
+0.0085*party + 0.0071*election + 0.0063*president + 0.0062*minister + 0.0057*vote + 0.0056*government + 0.0056*committee + 0.0054*political + 0.0046*state + 0.0044*member
 Topic 5:
-0.0019*report + 0.0018*police + 0.0017*comment + 0.0017*contribution + 0.0015*court + 0.0014*hold + 0.0014*student + 0.0013*today + 0.0013*change + 0.0013*use
+0.0095*game + 0.0068*team + 0.0068*win + 0.0060*play + 0.0055*player + 0.0046*league + 0.0044*club + 0.0044*music + 0.0041*cup + 0.0041*score
 Topic 6:
-0.0020*police + 0.0016*need + 0.0015*issue + 0.0015*senior + 0.0014*country + 0.0014*comment + 0.0014*plane + 0.0013*want + 0.0013*world + 0.0013*ratio
+0.0086*cancer + 0.0076*food + 0.0057*coffee + 0.0050*test + 0.0041*eat + 0.0040*tea + 0.0039*malaria + 0.0038*cricket + 0.0038*christmas + 0.0037*biscuit
 Topic 7:
-0.0016*week + 0.0015*day + 0.0015*need + 0.0015*court + 0.0014*game + 0.0014*team + 0.0013*company + 0.0013*change + 0.0013*city + 0.0013*police
+0.0052*indian + 0.0044*army + 0.0044*muslim + 0.0043*military + 0.0040*war + 0.0038*terrorist + 0.0037*aircraft + 0.0037*kill + 0.0036*khan + 0.0035*attack
 Topic 8:
-0.0016*game + 0.0015*police + 0.0014*close + 0.0014*city + 0.0013*play + 0.0013*team + 0.0013*east + 0.0013*start + 0.0013*people + 0.0013*storm
+0.0065*water + 0.0060*web + 0.0049*recommend + 0.0044*farm + 0.0044*earth + 0.0042*fish + 0.0038*comment + 0.0034*twitter + 0.0033*delete + 0.0033*area
 Topic 9:
-0.0020*people + 0.0018*need + 0.0016*simply + 0.0015*model + 0.0015*share + 0.0014*high + 0.0014*big + 0.0014*company + 0.0014*late + 0.0013*lead
+0.0100*price + 0.0089*market + 0.0058*percent + 0.0054*growth + 0.0053*apple + 0.0053*stock + 0.0052*cent + 0.0050*app + 0.0049*rate + 0.0049*port
