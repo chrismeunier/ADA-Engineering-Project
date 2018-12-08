@@ -1,40 +1,20 @@
 Topic 0:
-0.0152*farm + 0.0122*farmer + 0.0096*dairy + 0.0091*park + 0.0087*tree + 0.0080*building + 0.0079*burger + 0.0078*lobster + 0.0071*council + 0.0070*christmas
+0.0016*school + 0.0016*time + 0.0015*country + 0.0014*national + 0.0014*people + 0.0014*court + 0.0014*big + 0.0014*feel + 0.0013*award + 0.0013*service
 Topic 1:
-0.0059*canada + 0.0052*site + 0.0051*technology + 0.0051*customer + 0.0047*user + 0.0046*product + 0.0045*service + 0.0045*online + 0.0044*school + 0.0042*network
+0.0021*business + 0.0018*give + 0.0016*need + 0.0015*police + 0.0015*clear + 0.0014*life + 0.0014*full + 0.0014*relationship + 0.0013*system + 0.0013*leader
 Topic 2:
-0.0193*marino + 0.0151*colombia + 0.0114*indian + 0.0105*recommend + 0.0105*web + 0.0098*delhi + 0.0087*comment + 0.0077*city + 0.0075*rape + 0.0073*tiger
+0.0027*need + 0.0019*police + 0.0018*start + 0.0015*comment + 0.0015*post + 0.0014*benefit + 0.0014*register + 0.0013*early + 0.0013*work + 0.0013*family
 Topic 3:
-0.0157*gripper + 0.0117*solar + 0.0083*uninsured + 0.0081*magnetic + 0.0080*garbage + 0.0080*electric + 0.0077*chem + 0.0075*dress + 0.0075*fiat + 0.0073*pielke
+0.0019*city + 0.0019*need + 0.0015*time + 0.0015*rise + 0.0015*present + 0.0014*campaign + 0.0014*story + 0.0013*standard + 0.0013*return + 0.0013*comment
 Topic 4:
-0.0166*microsoft + 0.0096*lg + 0.0084*samsung + 0.0081*device + 0.0079*hariri + 0.0072*sparta + 0.0072*app + 0.0071*rating + 0.0070*lake + 0.0066*version
+0.0017*need + 0.0017*log + 0.0015*change + 0.0015*court + 0.0015*people + 0.0014*show + 0.0014*leave + 0.0013*use + 0.0012*state + 0.0012*drive
 Topic 5:
-0.0112*club + 0.0093*sentence + 0.0088*league + 0.0088*football + 0.0083*court + 0.0076*guilty + 0.0076*player + 0.0063*prison + 0.0060*manchester + 0.0057*liverpool
+0.0019*report + 0.0018*police + 0.0017*comment + 0.0017*contribution + 0.0015*court + 0.0014*hold + 0.0014*student + 0.0013*today + 0.0013*change + 0.0013*use
 Topic 6:
-0.0180*student + 0.0161*award + 0.0155*ontario + 0.0126*ore + 0.0124*youngstown + 0.0116*iron + 0.0113*tata + 0.0095*steel + 0.0073*university + 0.0072*college
+0.0020*police + 0.0016*need + 0.0015*issue + 0.0015*senior + 0.0014*country + 0.0014*comment + 0.0014*plane + 0.0013*want + 0.0013*world + 0.0013*ratio
 Topic 7:
-0.0239*album + 0.0201*apple + 0.0174*music + 0.0104*band + 0.0090*iphone + 0.0089*governor + 0.0086*ipad + 0.0085*civet + 0.0085*obi + 0.0076*caste
+0.0016*week + 0.0015*day + 0.0015*need + 0.0015*court + 0.0014*game + 0.0014*team + 0.0013*company + 0.0013*change + 0.0013*city + 0.0013*police
 Topic 8:
-0.0072*fire + 0.0061*water + 0.0048*cancer + 0.0046*river + 0.0039*percent + 0.0038*food + 0.0038*animal + 0.0037*firefighter + 0.0037*village + 0.0037*eat
+0.0016*game + 0.0015*police + 0.0014*close + 0.0014*city + 0.0013*play + 0.0013*team + 0.0013*east + 0.0013*start + 0.0013*people + 0.0013*storm
 Topic 9:
-0.0081*court + 0.0079*party + 0.0066*property + 0.0060*election + 0.0050*stock + 0.0047*lawyer + 0.0043*justice + 0.0043*price + 0.0042*company + 0.0042*case
-Topic 10:
-0.0048*government + 0.0040*country + 0.0036*project + 0.0035*market + 0.0034*power + 0.0033*state + 0.0031*minister + 0.0030*malaria + 0.0029*billion + 0.0027*economic
-Topic 11:
-0.0131*school + 0.0098*stevens + 0.0094*ipswich + 0.0092*sales + 0.0085*hockey + 0.0069*singapore + 0.0065*beer + 0.0062*malhotra + 0.0055*accenture + 0.0049*affiliate
-Topic 12:
-0.0134*health + 0.0123*medical + 0.0090*hospital + 0.0087*patient + 0.0081*disease + 0.0070*car + 0.0067*doctor + 0.0067*care + 0.0056*dr + 0.0052*child
-Topic 13:
-0.0086*flight + 0.0086*air + 0.0083*california + 0.0074*visa + 0.0073*airline + 0.0071*robot + 0.0070*aircraft + 0.0050*ghana + 0.0048*travel + 0.0047*military
-Topic 14:
-0.0220*fish + 0.0172*food + 0.0151*pizza + 0.0149*gannon + 0.0127*island + 0.0117*fishing + 0.0107*restaurant + 0.0105*plate + 0.0101*seafood + 0.0079*chef
-Topic 15:
-0.0051*sport + 0.0051*team + 0.0049*race + 0.0049*win + 0.0040*film + 0.0038*world + 0.0038*zealand + 0.0036*london + 0.0035*game + 0.0033*rugby
-Topic 16:
-0.0127*police + 0.0066*comment + 0.0061*arrest + 0.0051*cookie + 0.0038*trump + 0.0036*car + 0.0034*press + 0.0032*content + 0.0032*vehicle + 0.0032*post
-Topic 17:
-0.0048*book + 0.0035*woman + 0.0035*life + 0.0033*people + 0.0033*family + 0.0033*child + 0.0027*film + 0.0027*movie + 0.0026*feel + 0.0026*girl
-Topic 18:
-0.0201*game + 0.0110*ball + 0.0108*score + 0.0105*goal + 0.0086*play + 0.0078*coach + 0.0075*player + 0.0072*win + 0.0061*team + 0.0060*minute
-Topic 19:
-0.0121*tax + 0.0083*bank + 0.0077*currency + 0.0075*marijuana + 0.0071*share + 0.0071*sri + 0.0068*growth + 0.0064*lanka + 0.0062*company + 0.0061*corporation
+0.0020*people + 0.0018*need + 0.0016*simply + 0.0015*model + 0.0015*share + 0.0014*high + 0.0014*big + 0.0014*company + 0.0014*late + 0.0013*lead
