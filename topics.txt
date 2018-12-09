@@ -1,20 +1,20 @@
 Topic 0:
-0.0127*police + 0.0103*court + 0.0077*drug + 0.0060*arrest + 0.0059*case + 0.0052*murder + 0.0047*hospital + 0.0045*patient + 0.0042*medical + 0.0042*officer
+0.0040*government + 0.0035*company + 0.0033*bank + 0.0032*tax + 0.0029*party + 0.0029*comment + 0.0027*minister + 0.0026*country + 0.0026*cent + 0.0025*project
 Topic 1:
-0.0084*child + 0.0071*woman + 0.0058*school + 0.0052*girl + 0.0044*family + 0.0042*life + 0.0041*book + 0.0040*parent + 0.0037*people + 0.0035*film
+0.0071*school + 0.0066*student + 0.0045*child + 0.0034*people + 0.0032*want + 0.0031*life + 0.0030*woman + 0.0030*university + 0.0028*work + 0.0027*parent
 Topic 2:
-0.0058*company + 0.0045*business + 0.0038*project + 0.0038*tax + 0.0035*industry + 0.0034*service + 0.0031*investment + 0.0029*management + 0.0028*government + 0.0028*development
+0.0102*game + 0.0081*team + 0.0066*win + 0.0060*player + 0.0059*league + 0.0053*play + 0.0049*score + 0.0049*goal + 0.0046*ball + 0.0045*match
 Topic 3:
-0.0071*cookie + 0.0063*site + 0.0045*website + 0.0045*hotel + 0.0040*visit + 0.0040*garden + 0.0038*rent + 0.0038*store + 0.0037*museum + 0.0037*visa
+0.0108*police + 0.0082*court + 0.0057*death + 0.0050*murder + 0.0047*victim + 0.0046*case + 0.0045*kill + 0.0045*arrest + 0.0035*state + 0.0034*prison
 Topic 4:
-0.0085*party + 0.0071*election + 0.0063*president + 0.0062*minister + 0.0057*vote + 0.0056*government + 0.0056*committee + 0.0054*political + 0.0046*state + 0.0044*member
+0.0102*film + 0.0074*movie + 0.0051*music + 0.0046*album + 0.0045*show + 0.0040*book + 0.0033*fan + 0.0032*festival + 0.0032*artist + 0.0030*band
 Topic 5:
-0.0095*game + 0.0068*team + 0.0068*win + 0.0060*play + 0.0055*player + 0.0046*league + 0.0044*club + 0.0044*music + 0.0041*cup + 0.0041*score
+0.0078*cancer + 0.0062*disease + 0.0058*biscuit + 0.0052*malaria + 0.0052*species + 0.0049*dr + 0.0046*climate + 0.0041*study + 0.0040*water + 0.0040*health
 Topic 6:
-0.0086*cancer + 0.0076*food + 0.0057*coffee + 0.0050*test + 0.0041*eat + 0.0040*tea + 0.0039*malaria + 0.0038*cricket + 0.0038*christmas + 0.0037*biscuit
+0.0204*estate + 0.0197*tour + 0.0150*photo + 0.0149*road + 0.0116*casa + 0.0107*museum + 0.0106*sunset + 0.0105*ranch + 0.0103*inside + 0.0098*gallery
 Topic 7:
-0.0052*indian + 0.0044*army + 0.0044*muslim + 0.0043*military + 0.0040*war + 0.0038*terrorist + 0.0037*aircraft + 0.0037*kill + 0.0036*khan + 0.0035*attack
+0.0142*food + 0.0139*coffee + 0.0087*restaurant + 0.0074*sell + 0.0069*ram + 0.0069*bar + 0.0067*wine + 0.0066*bean + 0.0064*brand + 0.0064*pizza
 Topic 8:
-0.0065*water + 0.0060*web + 0.0049*recommend + 0.0044*farm + 0.0044*earth + 0.0042*fish + 0.0038*comment + 0.0034*twitter + 0.0033*delete + 0.0033*area
+0.0064*airline + 0.0063*flight + 0.0062*aircraft + 0.0061*air + 0.0059*satellite + 0.0056*boat + 0.0055*water + 0.0051*carrier + 0.0049*ship + 0.0049*island
 Topic 9:
-0.0100*price + 0.0089*market + 0.0058*percent + 0.0054*growth + 0.0053*apple + 0.0053*stock + 0.0052*cent + 0.0050*app + 0.0049*rate + 0.0049*port
+0.0083*energy + 0.0074*solar + 0.0071*gas + 0.0062*farm + 0.0055*technology + 0.0055*ir + 0.0054*product + 0.0053*company + 0.0052*market + 0.0049*carbon
