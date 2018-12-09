@@ -14,7 +14,7 @@ sc = spark.sparkContext
 
 #Initialisation
 WLP_FILE = '/datasets/now_corpus/corpus/wlp/*-*-*.txt'
-#WLP_FILE = '../*-*-*.txt'
+#WLP_FILE = '../sample_data/wordLem_poS.txt'
 NPARTITION = 40
 BOTTOM_PERCENT = 0.8
 TOP_PERCENT = 0.95
@@ -22,15 +22,17 @@ TOP_PERCENT = 0.95
 
 
 ############## Loading stage ##############
-#read the text file and remove the first three rows (zip trick)
-wlp_rdd = sc.textFile(WLP_FILE).zipWithIndex().filter(lambda r: r[1] > 2).keys()
-
-#we split the elements separated by tabs
-lines = wlp_rdd.map(lambda r: r.split('\t'))
+#read the text file and split by tabs
+wlp_rdd = sc.textFile(WLP_FILE).zipWithIndex().filter(lambda r: r[1] > 2).keys().map(lambda r: r.split('\t'))
 
 #identify the columns
-wlp_schema = lines.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2],lemma=r[3],pos=r[4]))
-wlp = spark.createDataFrame(wlp_schema).repartition(NPARTITION,'lemma').persist() #this partition propagates and so does not need to be repeated
+wlp_schema = wlp_rdd.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2],lemma=r[3],pos=r[4]))
+wlp = spark.createDataFrame(wlp_schema)
+
+#immediately save and load in parquet because operations afterwards might be a lot more efficient
+wlp.write.mode('overwrite').parquet('wlp_bytext.parquet')
+wlp = spark.read.parquet('wlp_bytext.parquet')
+
 
 
 ############## Cleaning stage ##############
