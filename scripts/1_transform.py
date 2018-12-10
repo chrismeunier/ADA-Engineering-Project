@@ -33,7 +33,7 @@ result_tfidf = idfModel.transform(result_cv).drop('raw_features')
 
 
 
-############## Saving stage ##############/datasets/now_corpus/corpus/wlp
+############## Saving stage ##############
 #saving dataframe
 result_tfidf.write.mode('overwrite').parquet('tfidf_all.parquet')
 

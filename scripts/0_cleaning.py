@@ -23,13 +23,13 @@ TOP_PERCENT = 0.95
 
 ############## Loading stage ##############
 #read the text file and split by tabs
-wlp_rdd = sc.textFile(WLP_FILE).zipWithIndex().filter(lambda r: r[1] > 2).keys().map(lambda r: r.split('\t'))
+wlp_rdd = sc.textFile(WLP_FILE).map(lambda r: r.split('\t'))
 
-#identify the columns
+#identify the columns and changing rdd->df
 wlp_schema = wlp_rdd.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2],lemma=r[3],pos=r[4]))
 wlp = spark.createDataFrame(wlp_schema)
 
-#immediately save and load in parquet because operations afterwards might be a lot more efficient
+#immediately save and load in parquet because operations afterwards might be a lot more efficient (don't know yet)
 wlp.write.mode('overwrite').parquet('wlp_bytext.parquet')
 wlp = spark.read.parquet('wlp_bytext.parquet')
 
@@ -45,7 +45,7 @@ stopwords = sc.textFile('our_stopwords.txt').collect()
 wlp_nostop = wlp_nopos.filter(~wlp['lemma'].isin(stopwords))
 lemma_freq = wlp_nostop.groupBy('lemma').count()
 
-#removal
+#most and least frequent
 [bottom, top] = lemma_freq.approxQuantile('count', [BOTTOM_PERCENT, TOP_PERCENT], 0.01)
 lemma_tokeep = lemma_freq.filter(lemma_freq['count']<top).filter(lemma_freq['count']>bottom)
 
