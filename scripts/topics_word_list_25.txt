@@ -1,0 +1,50 @@
+Topic 0:
+0.0060*ruin + 0.0049*cigarette + 0.0048*loving + 0.0044*endeavor + 0.0043*commerce + 0.0042*generous + 0.0041*teaching + 0.0039*halt + 0.0037*inventory + 0.0034*jewish
+Topic 1:
+0.0113*hedge + 0.0100*candle + 0.0098*holder + 0.0082*technological + 0.0077*classroom + 0.0071*renewable + 0.0070*appreciate + 0.0065*vacation + 0.0059*kidney + 0.0057*uranium
+Topic 2:
+0.0141*electronics + 0.0129*clue + 0.0128*unnecessary + 0.0121*superintendent + 0.0120*chronicle + 0.0119*stomach + 0.0104*aging + 0.0100*android + 0.0094*additionally + 0.0094*convinced
+Topic 3:
+0.0104*quantity + 0.0100*diabetes + 0.0087*rifle + 0.0081*delight + 0.0079*monetary + 0.0076*container + 0.0071*colony + 0.0069*auditor + 0.0069*imagination + 0.0053*alike
+Topic 4:
+0.0174*slate + 0.0141*ethics + 0.0118*smooth + 0.0106*haul + 0.0101*well-known + 0.0094*nerve + 0.0078*everyday + 0.0074*awesome + 0.0073*shipping + 0.0072*yeah
+Topic 5:
+0.0279*sandwich + 0.0138*publication + 0.0130*popularity + 0.0126*novelty + 0.0117*logical + 0.0107*evaluation + 0.0107*striking + 0.0104*prediction + 0.0098*stack + 0.0088*din
+Topic 6:
+0.0285*core + 0.0243*federation + 0.0228*carve + 0.0223*cabinet + 0.0204*se + 0.0160*observer + 0.0140*hip + 0.0114*migrant + 0.0111*assure + 0.0107*testimony
+Topic 7:
+0.0089*dj + 0.0082*virus + 0.0074*dam + 0.0072*drinking + 0.0072*neighborhood + 0.0071*taxi + 0.0068*firefighter + 0.0060*chartered + 0.0060*pirate + 0.0057*lyrics
+Topic 8:
+0.0079*overwhelming + 0.0071*dedicated + 0.0069*mature + 0.0062*salt + 0.0057*blog + 0.0056*jury + 0.0053*riot + 0.0051*heel + 0.0049*yogurt + 0.0047*analyze
+Topic 9:
+0.0204*mad + 0.0170*demise + 0.0155*slump + 0.0122*blockbuster + 0.0120*passing + 0.0109*navigate + 0.0103*invitation + 0.0100*furthermore + 0.0099*awful + 0.0097*painful
+Topic 10:
+0.0237*array + 0.0151*spider + 0.0145*polo + 0.0108*cement + 0.0099*alley + 0.0089*modify + 0.0087*redevelopment + 0.0082*shopper + 0.0075*excitement + 0.0069*butterfly
+Topic 11:
+0.0157*lap + 0.0148*physically + 0.0137*misuse + 0.0113*marketplace + 0.0108*blade + 0.0102*ample + 0.0102*bizarre + 0.0095*relocate + 0.0091*mess + 0.0091*slap
+Topic 12:
+0.0085*levy + 0.0066*murderer + 0.0066*oversee + 0.0065*five-year + 0.0062*sack + 0.0060*hectare + 0.0059*sprint + 0.0058*messenger + 0.0057*desktop + 0.0056*briefly
+Topic 13:
+0.0167*endure + 0.0113*proactive + 0.0110*mutual + 0.0102*notably + 0.0089*prosperity + 0.0089*defendant + 0.0088*tolerance + 0.0081*mate + 0.0080*tenant + 0.0078*explorer
+Topic 14:
+0.0070*networking + 0.0063*magnitude + 0.0059*psychological + 0.0059*crush + 0.0058*heroin + 0.0054*oak + 0.0053*mps + 0.0053*benchmark + 0.0053*disable + 0.0052*vacant
+Topic 15:
+0.0192*two-day + 0.0145*guest + 0.0141*bug + 0.0135*infant + 0.0110*newsletter + 0.0102*hardware + 0.0101*mosque + 0.0088*broadcaster + 0.0083*trio + 0.0083*guru
+Topic 16:
+0.0179*disposal + 0.0174*disappointment + 0.0112*delighted + 0.0110*frankly + 0.0106*cd + 0.0103*plunge + 0.0101*gravity + 0.0098*full-time + 0.0097*fascinating + 0.0097*sexuality
+Topic 17:
+0.0164*legally + 0.0162*greek + 0.0142*strain + 0.0140*evaluate + 0.0128*funeral + 0.0106*fitness + 0.0094*nominee + 0.0093*drain + 0.0093*toe + 0.0090*superior
+Topic 18:
+0.0094*habit + 0.0091*odds + 0.0079*tuition + 0.0070*clothing + 0.0068*lesbian + 0.0066*bronze + 0.0064*medication + 0.0063*satisfaction + 0.0061*meaningful + 0.0059*cautious
+Topic 19:
+0.0211*offshore + 0.0146*fold + 0.0132*trout + 0.0124*clock + 0.0120*mineral + 0.0118*civic + 0.0111*smoking + 0.0103*supporting + 0.0099*foreigner + 0.0092*ore
+Topic 20:
+0.0159*invalid + 0.0143*tribe + 0.0140*dare + 0.0132*tribal + 0.0117*dissatisfied + 0.0112*climber + 0.0106*bump + 0.0087*spur + 0.0087*expedition + 0.0080*sustainable
+Topic 21:
+0.0286*stimulate + 0.0181*skilled + 0.0179*detain + 0.0156*inaccuracy + 0.0144*boxer + 0.0129*bowler + 0.0120*casa + 0.0116*ranch + 0.0108*personalise + 0.0105*kiwi
+Topic 22:
+0.0070*hug + 0.0061*hunger + 0.0061*sheikh + 0.0054*unfair + 0.0054*campus + 0.0051*jacket + 0.0051*dating + 0.0051*odd + 0.0050*drown + 0.0050*math
+Topic 23:
+0.0160*required + 0.0147*originate + 0.0145*pursuit + 0.0126*kiss + 0.0113*spam + 0.0090*weird + 0.0090*constituent + 0.0089*bombing + 0.0087*vegetable + 0.0079*long-term
+Topic 24:
+0.0145*plug + 0.0140*frequency + 0.0126*brutal + 0.0123*shield + 0.0114*seal + 0.0113*idol + 0.0099*appetite + 0.0095*workplace + 0.0090*applaud + 0.0086*rainfall

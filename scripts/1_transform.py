@@ -36,5 +36,11 @@ result_tfidf = idfModel.transform(result_cv).drop('raw_features')
 ############## Saving stage ##############/datasets/now_corpus/corpus/wlp
 #saving dataframe
 result_tfidf.write.mode('overwrite').parquet('tfidf_all.parquet')
+
 #saving vocabulary from CountVectorizer
+voc = cvmodel.vocabulary
 sc.parallelize(cvmodel.vocabulary).saveAsTextFile('voc.txt')
+'''with open('voc.txt','w') as txt:
+    for i,word in enumerate(voc):
+        txt.write(word.encode(encoding='UTF-8')+'\n')
+    print('Saved {} words'.format(i+1))'''

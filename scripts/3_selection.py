@@ -1,9 +1,9 @@
-#############################################################################################
-###################### Script 2, perform lda on transformed dataframes ######################
-#############################################################################################
+##########################################################################################################
+###################### Script 3, selection fo the informations we want to download ######################
+#########################################################################################################
 
-import findspark
-findspark.init()
+#import findspark
+#findspark.init()
 
 from pyspark.sql import *
 from pyspark.ml.clustering import LDA, LDAModel
@@ -13,28 +13,11 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 
 #Initialisation
-ALPHA = 3
-BETA = 0.0
-NTOPICS = 10
-SAMPLE_FRACTION = 0.1
 SOURCES_FILE = '/datasets/now_corpus/corpus/source/now_sources_pt*.txt'
 
 tfidf = spark.read.parquet('tfidf_all.parquet')
+result_lda = spark.read.parquet('result_lda.parquet')
 voc = sc.textFile('voc.txt').collect()
-
-
-############## LDA stage ##############
-#training
-tfidf_sample = tfidf.sample(fraction=SAMPLE_FRACTION)
-alpha_asymmetric = [ALPHA/(k+1) for k in range(NTOPICS)]
-lda_model = LDA(k=NTOPICS, maxIter=10, docConcentration=alpha_asymmetric,topicConcentration=BETA).setFeaturesCol('non_norm_features').fit(tfidf_sample)
-
-#get topics and word list
-topics = lda_model.describeTopics()
-
-#get topic distribution for all texts
-result_lda = lda_model.transform(tfidf).drop('features')
-
 
 
 ############## Joining stage ##############
@@ -53,6 +36,3 @@ topic_source_bytext = sources.join(result_lda,'textID','inner').drop('url','web'
 ############## Saving stage ##############
 #save topic distribution
 topic_source_bytext.write.mode('overwrite').parquet('topic_source_bytext.parquet')
-
-#save topic distribution over words
-topics.write.mode('overwrite').parquet('topics.parquet')

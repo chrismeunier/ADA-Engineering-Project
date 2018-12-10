@@ -1,0 +1,20 @@
+Topic 0:
+0.0033*tribal + 0.0032*tribe + 0.0031*endeavor + 0.0029*teaching + 0.0028*oversee + 0.0027*bug + 0.0026*generous + 0.0026*commerce + 0.0026*halt + 0.0025*unexpected
+Topic 1:
+0.0040*dare + 0.0040*heroin + 0.0039*hedge + 0.0038*exam + 0.0034*dissatisfied + 0.0033*psychological + 0.0031*formally + 0.0030*condom + 0.0030*bizarre + 0.0030*renewable
+Topic 2:
+0.0072*superintendent + 0.0070*cabinet + 0.0067*chronicle + 0.0064*clue + 0.0064*stomach + 0.0063*frequency + 0.0063*unnecessary + 0.0063*aging + 0.0063*electronics + 0.0058*thin
+Topic 3:
+0.0050*quantity + 0.0049*delight + 0.0048*networking + 0.0046*diabetes + 0.0040*cement + 0.0039*desert + 0.0039*evacuate + 0.0037*array + 0.0034*compliance + 0.0032*meaningful
+Topic 4:
+0.0058*ethics + 0.0054*rifle + 0.0053*slate + 0.0049*levy + 0.0046*hunger + 0.0045*well-known + 0.0044*hug + 0.0044*haul + 0.0044*smooth + 0.0041*dj
+Topic 5:
+0.0070*sandwich + 0.0065*two-day + 0.0062*clarify + 0.0061*lap + 0.0061*inaccuracy + 0.0060*guest + 0.0058*embassy + 0.0053*clock + 0.0053*infant + 0.0052*trout
+Topic 6:
+0.0051*lesbian + 0.0049*technological + 0.0048*odds + 0.0048*tuition + 0.0047*federation + 0.0047*array + 0.0043*greek + 0.0042*legally + 0.0041*clothing + 0.0040*pursuit
+Topic 7:
+0.0079*offshore + 0.0067*required + 0.0055*boxer + 0.0053*climber + 0.0052*cigarette + 0.0052*invalid + 0.0051*additionally + 0.0051*ruin + 0.0050*informal + 0.0049*mps
+Topic 8:
+0.0054*disappointment + 0.0051*overwhelming + 0.0050*spider + 0.0048*humble + 0.0045*polo + 0.0044*casa + 0.0041*ranch + 0.0038*mature + 0.0035*blog + 0.0033*fascinating
+Topic 9:
+0.0109*mad + 0.0092*stimulate + 0.0082*slump + 0.0069*core + 0.0068*demise + 0.0067*endure + 0.0065*passing + 0.0060*detain + 0.0058*physically + 0.0058*navigate
