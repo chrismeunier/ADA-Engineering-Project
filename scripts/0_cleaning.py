@@ -17,7 +17,7 @@ WLP_FILE = '/datasets/now_corpus/corpus/wlp/*-*-*.txt'
 #WLP_FILE = '../sample_data/wordLem_poS.txt'
 NPARTITION = 40
 BOTTOM_PERCENT = 0.8
-TOP_PERCENT = 0.95
+TOP_PERCENT = 0.99
 
 
 
@@ -30,9 +30,8 @@ wlp_schema = wlp_rdd.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2
 wlp = spark.createDataFrame(wlp_schema)
 
 #immediately save and load in parquet because operations afterwards might be a lot more efficient (don't know yet)
-wlp.write.mode('overwrite').parquet('wlp_bytext.parquet')
-wlp = spark.read.parquet('wlp_bytext.parquet')
-
+wlp.write.mode('overwrite').parquet('wlp.parquet')
+wlp = spark.read.parquet('wlp.parquet')
 
 
 ############## Cleaning stage ##############
@@ -48,6 +47,7 @@ lemma_freq = wlp_nostop.groupBy('lemma').count()
 #most and least frequent
 [bottom, top] = lemma_freq.approxQuantile('count', [BOTTOM_PERCENT, TOP_PERCENT], 0.01)
 lemma_tokeep = lemma_freq.filter(lemma_freq['count']<top).filter(lemma_freq['count']>bottom)
+print('Percentage of lemmas left: %.2f'%(lemma_tokeep.count()/lemma_freq.count()*100))
 
 wlp_nostop.registerTempTable('wlp_nostop')
 lemma_tokeep.registerTempTable('lemma_tokeep')

@@ -15,18 +15,18 @@ sc = spark.sparkContext
 #Initialisation
 ALPHA = 1
 BETA = 0.35
-NTOPICS = [5,10,15,20,25]
+NTOPICS = [10]
 SAMPLE_FRACTION = 0.5
 NPARTITION = 30
-VOCABSIZE = 10000
+VOCABSIZE = 5000
 wlp_bytext = spark.read.parquet('wlp_bytext.parquet')
 
 
 
 ############## Transformation stage ##############
 #tf
-cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features").fit(wlp_bytext)
-result_cv = cvmodel.transform(wlp_bytext).drop('lemma_list').repartition(NPARTITION,'textID').persist() #partition persists
+cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features", minDF=0.2).fit(wlp_bytext)
+result_cv = cvmodel.transform(wlp_bytext).drop('lemma_list') #partition persists
 
 #idf
 idfModel = IDF(inputCol="raw_features", outputCol="non_norm_features").fit(result_cv)
@@ -37,7 +37,7 @@ norm = Normalizer(inputCol="non_norm_features", outputCol="features")
 tfidf_norm = norm.transform(result_tfidf).drop('non_norm_features')
 
 voc = cvmodel.vocabulary
-
+print('Number of lemmas in vocabulary: {}'.format(len(voc)))
 
 
 ############## LDA stage ##############
@@ -45,12 +45,11 @@ tfidf_sample = tfidf_norm.sample(fraction=SAMPLE_FRACTION)
 split = tfidf_sample.randomSplit([0.8,0.2])
 train = split[0]
 test = split[1]
-n = test.count()
 
 for k in NTOPICS:
     #training
     alpha_asymmetric = [ALPHA/(kn+1) for kn in range(k)] #, docConcentration=alpha_asymmetric,topicConcentration=BETA
-    lda_model = LDA(k=k, maxIter=100,optimizeDocConcentration=True).fit(train)
+    lda_model = LDA(k=k, maxIter=1000, optimizeDocConcentration=True).fit(train)
 
     #get topics and word list
     topics = lda_model.describeTopics()
@@ -59,7 +58,7 @@ for k in NTOPICS:
 
     #printing topic list
     print('############## Number of topics {}:\n'.format(k))
-    print('logPerplexity: {}'.format(lda_model.logPerplexity(test)/n)) #roughly 0.014 accoridng to what we saw
+    print('logPerplexity: {}'.format(lda_model.logPerplexity(test))) #roughly 8 accoridng to what we saw
     for t in range(len(words_topics)):
         print('Topic {}:'.format(t))
         w_list = [voc[idx] for idx in words_topics[t]]

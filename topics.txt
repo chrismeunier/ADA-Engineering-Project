@@ -1,20 +1,20 @@
 Topic 0:
-0.0086*marijuana + 0.0083*court + 0.0070*dog + 0.0063*race + 0.0055*woman + 0.0050*divorce + 0.0045*prison + 0.0037*high + 0.0037*licence + 0.0036*judge
+0.0047*comment + 0.0039*kill + 0.0036*game + 0.0030*family + 0.0030*mother + 0.0029*death + 0.0029*police + 0.0029*attack + 0.0029*day + 0.0028*life
 Topic 1:
-0.0088*police + 0.0048*child + 0.0041*court + 0.0039*victim + 0.0039*kill + 0.0038*case + 0.0036*death + 0.0033*woman + 0.0033*arrest + 0.0031*law
+0.0118*student + 0.0117*school + 0.0088*health + 0.0079*university + 0.0072*education + 0.0071*dr + 0.0069*child + 0.0069*medical + 0.0069*cancer + 0.0060*study
 Topic 2:
-0.0084*food + 0.0079*fashion + 0.0073*coffee + 0.0069*dress + 0.0067*cancer + 0.0064*fish + 0.0056*eat + 0.0053*wear + 0.0049*civet + 0.0046*restaurant
+0.0052*bank + 0.0051*project + 0.0041*energy + 0.0041*tax + 0.0040*government + 0.0038*gas + 0.0037*cent + 0.0037*power + 0.0033*billion + 0.0031*economy
 Topic 3:
-0.0077*company + 0.0061*market + 0.0052*price + 0.0052*tax + 0.0050*business + 0.0048*bank + 0.0044*rate + 0.0044*cent + 0.0042*investment + 0.0040*growth
+0.0095*company + 0.0064*business + 0.0055*market + 0.0050*price + 0.0048*share + 0.0044*stock + 0.0043*online + 0.0042*site + 0.0041*investor + 0.0038*buy
 Topic 4:
-0.0069*student + 0.0058*school + 0.0050*party + 0.0050*president + 0.0045*university + 0.0043*election + 0.0036*visa + 0.0035*leader + 0.0034*education + 0.0033*state
+0.0083*police + 0.0082*city + 0.0060*area + 0.0058*water + 0.0058*vehicle + 0.0057*building + 0.0056*refugee + 0.0051*fire + 0.0050*car + 0.0050*road
 Topic 5:
-0.0060*city + 0.0057*water + 0.0043*area + 0.0037*site + 0.0036*project + 0.0036*vehicle + 0.0034*council + 0.0033*road + 0.0032*car + 0.0031*community
+0.0072*court + 0.0051*party + 0.0047*government + 0.0046*state + 0.0040*election + 0.0038*president + 0.0036*minister + 0.0035*case + 0.0033*leader + 0.0032*law
 Topic 6:
-0.0104*game + 0.0075*win + 0.0071*player + 0.0069*team + 0.0060*cookie + 0.0060*play + 0.0056*league + 0.0047*cup + 0.0045*coach + 0.0044*goal
+0.0075*game + 0.0073*team + 0.0061*win + 0.0056*music + 0.0055*player + 0.0053*play + 0.0048*club + 0.0046*cup + 0.0044*sport + 0.0044*league
 Topic 7:
-0.0129*patient + 0.0105*medical + 0.0099*drug + 0.0094*trump + 0.0076*republican + 0.0074*property + 0.0073*immigrant + 0.0072*hotel + 0.0066*doctor + 0.0064*house
+0.0069*technology + 0.0066*design + 0.0064*climate + 0.0052*system + 0.0049*product + 0.0047*wine + 0.0046*car + 0.0043*data + 0.0040*solution + 0.0035*device
 Topic 8:
-0.0151*film + 0.0144*music + 0.0100*album + 0.0070*movie + 0.0065*artist + 0.0061*band + 0.0060*church + 0.0060*festival + 0.0053*play + 0.0048*tour
+0.0155*film + 0.0085*woman + 0.0084*movie + 0.0049*actor + 0.0047*marriage + 0.0045*female + 0.0044*festival + 0.0044*sex + 0.0044*show + 0.0039*story
 Topic 9:
-0.0032*show + 0.0028*time + 0.0028*use + 0.0028*device + 0.0028*ghost + 0.0027*video + 0.0026*web + 0.0025*read + 0.0025*want + 0.0025*book
+0.0073*book + 0.0045*income + 0.0043*food + 0.0033*dress + 0.0033*fashion + 0.0031*tax + 0.0030*percent + 0.0030*country + 0.0028*writer + 0.0027*culture
