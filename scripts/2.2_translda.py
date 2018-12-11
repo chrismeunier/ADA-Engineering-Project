@@ -25,7 +25,7 @@ wlp_bytext = spark.read.parquet('wlp_bytext.parquet')
 
 ############## Transformation stage ##############
 #tf
-cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features", minDF=0.2).fit(wlp_bytext)
+cvmodel = CountVectorizer(inputCol="lemma_list", outputCol="raw_features", minDF=200).fit(wlp_bytext)
 result_cv = cvmodel.transform(wlp_bytext).drop('lemma_list') #partition persists
 
 #idf

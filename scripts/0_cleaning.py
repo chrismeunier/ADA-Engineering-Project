@@ -47,7 +47,9 @@ lemma_freq = wlp_nostop.groupBy('lemma').count()
 #most and least frequent
 [bottom, top] = lemma_freq.approxQuantile('count', [BOTTOM_PERCENT, TOP_PERCENT], 0.01)
 lemma_tokeep = lemma_freq.filter(lemma_freq['count']<top).filter(lemma_freq['count']>bottom)
-print('Percentage of lemmas left: %.2f'%(lemma_tokeep.count()/lemma_freq.count()*100))
+c = lemma_tokeep.count()
+print('Number of lemmas left: %d'%c)
+print('Percentage of lemmas left: %f'%(c/lemma_freq.count()*100))
 
 wlp_nostop.registerTempTable('wlp_nostop')
 lemma_tokeep.registerTempTable('lemma_tokeep')
