@@ -13,7 +13,7 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 
 #Initialisation
-NTOPICS = [5,15]
+NTOPICS = [10]
 SAMPLE_FRACTION = 0.33333
 wlp_bytext = spark.read.parquet('wlp_bytext.parquet')
 
