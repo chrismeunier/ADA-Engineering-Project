@@ -1,5 +1,5 @@
 #########################################################################################################
-###################### Script 3, selection fo the informations we want to download ######################
+###################### Script 3, selection of the informations we want to download ######################
 #########################################################################################################
 
 import findspark
@@ -45,13 +45,26 @@ distribution = (result_lda.withColumn("topic", to_array(col("topicDistribution")
 country = sources.drop("date","nwords","title","url","website")
 country = country.select(col("country"), col("textID").alias("c_textID"))
 country_dist = distribution.join(country, distribution.textID == country.c_textID).drop("c_textID")
-avg_countryTopics = country_dist.sort("textID").groupby("country").mean().drop("avg(textID)")
+avg_countryTopics = country_distgroupby("country").mean().drop("avg(textID)")
 
 #making df for avg topics by dates
 dates = sources.drop("country","nwords","title","url","website")
 dates = dates.select(col("date"), col("textID").alias("d_textID"))
 date_dist = distribution.join(dates, distribution.textID == dates.d_textID).drop("d_textID")
 avg_dateTopics = date_dist.sort("textID").groupBy(year("date"),month("date")).mean().drop('avg(textID)')
+
+#making of sentiment analysis
+text_US_topic0 = sources.filter(col('country')=="US").drop("country","nwords","title","url","website")
+text_US_topic0 = text_US_topic0.select(col("date"), col("textID").alias("d_textID"))
+text_US_topic0 = distribution.join(text_US_topic0, distribution.textID == text_US_topic0.d_textID).drop("d_textID").sort("topic[0]",ascending=False).limit(100)
+text_US_topic0 = text_US_topic0.select(col("textID"), col("date"))
+
+wlp_rdd = sc.textFile('/datasets/now_corpus/corpus/text/16-10-*.txt') #first read the text file
+
+lines = wlp_rdd.map(lambda r: [r[2:r[2:15].find(' ')+2],r[r[2:15].find(' ')+2:]]) #we split the different elements
+text_schema = lines.map(lambda r: Row(t_textID=int(r[0]),text=r[1])) #identify the columns
+textdf = spark.createDataFrame(text_schema)
+sentiment_US_0 = text_US_topic0.join(textdf, text_US_topic0.textID == textdf.t_textID).drop("t_textID")
 
 
 

@@ -33,6 +33,8 @@ norm = Normalizer(inputCol="non_norm_features", outputCol="features")
 tfidf_norm = norm.transform(result_tfidf).drop('non_norm_features')
 
 voc = cvmodel.vocabulary
+tfidf_norm.write.mode('overwrite').parquet('tfidf_norm.parquet')
+
 
 
 ############## LDA stage ##############
