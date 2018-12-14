@@ -13,8 +13,8 @@ spark = SparkSession.builder.getOrCreate()
 sc = spark.sparkContext
 
 #Initialisation
-NTOPICS = [10]
-SAMPLE_FRACTION = 0.33333
+NTOPICS = [15]
+SAMPLE_FRACTION = 0.5
 wlp_bytext = spark.read.parquet('wlp_bytext.parquet')
 
 
@@ -43,7 +43,7 @@ test = split[1]
 
 for k in NTOPICS:
     #training
-    lda_model = LDA(k=k, maxIter=750, optimizeDocConcentration=True).fit(train)
+    lda_model = LDA(k=k, maxIter=1000, optimizeDocConcentration=True).fit(train)
 
     #get topics and word list
     topics = lda_model.describeTopics()
@@ -61,10 +61,10 @@ for k in NTOPICS:
         print('\n')
 
     #saving model
-    lda_model.write().overwrite().save('lda_model_k={}'.format(k))
+    lda_model.write().overwrite().save('lda_model_k={}_2'.format(k))
 
 
 ############## Saving sage stage ##############
 #get topic distribution for all texts
-#result_lda = lda_model.transform(tfidf).drop('features')
-#result_lda.write.mode('overwrite').parquet('result_lda.parquet')
+result_lda = lda_model.transform(tfidf_norm).drop('features')
+result_lda.write.mode('overwrite').parquet('result_lda.parquet')
