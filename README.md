@@ -1,3 +1,6 @@
+# Stuff to add!
+Dependencies for the notebook: numpy, pyplot, pandas, pyspark, findspark, scikit, datetime
+
 # Biases and sentimentality in online newspapers
 Jean-Marc Bejjani - Luca Montanelli - Christophe Muller
 
