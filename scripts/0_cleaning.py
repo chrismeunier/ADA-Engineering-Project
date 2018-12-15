@@ -2,6 +2,7 @@
 ################## Script 0, importing data, cleaning it and saving it ###############
 ######################################################################################
 
+#to run locally, uncomment the next 2 lines
 #import findspark
 #findspark.init()
 
@@ -14,8 +15,6 @@ sc = spark.sparkContext
 
 #Initialisation
 WLP_FILE = '/datasets/now_corpus/corpus/wlp/*-*-*.txt'
-#WLP_FILE = '../sample_data/wordLem_poS.txt'
-NPARTITION = 40
 BOTTOM_PERCENT = 0.8
 TOP_PERCENT = 0.99
 
@@ -29,9 +28,6 @@ wlp_rdd = sc.textFile(WLP_FILE).map(lambda r: r.split('\t'))
 wlp_schema = wlp_rdd.map(lambda r: Row(textID=int(r[0]),idseq=int(r[1]),word=r[2],lemma=r[3],pos=r[4]))
 wlp = spark.createDataFrame(wlp_schema)
 
-#immediately save and load in parquet because operations afterwards might be a lot more efficient (don't know yet)
-wlp.write.mode('overwrite').parquet('wlp.parquet')
-wlp = spark.read.parquet('wlp.parquet')
 
 
 ############## Cleaning stage ##############

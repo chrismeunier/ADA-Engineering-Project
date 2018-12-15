@@ -1,0 +1,20 @@
+Topic 0:
+0.0019*comment + 0.0017*game + 0.0017*police + 0.0016*people + 0.0015*team + 0.0015*company + 0.0014*city + 0.0014*woman + 0.0014*government + 0.0014*win
+Topic 1:
+0.0002*sorghum + 0.0002*quilt + 0.0002*civet + 0.0002*diatom + 0.0002*timeshare + 0.0002*end-of-arm + 0.0002*effector + 0.0002*asc + 0.0002*parlor + 0.0002*lizard
+Topic 2:
+0.0002*sorghum + 0.0002*civet + 0.0002*quilt + 0.0002*powerplay + 0.0002*timeshare + 0.0002*gmat + 0.0002*child + 0.0002*end-of-arm + 0.0002*asc + 0.0002*logic
+Topic 3:
+0.0002*sorghum + 0.0002*retain + 0.0002*dare + 0.0002*maoist + 0.0002*symptom + 0.0002*barely + 0.0002*cellar + 0.0002*housewife + 0.0002*quilt + 0.0002*qualification
+Topic 4:
+0.0002*profitable + 0.0002*numerous + 0.0002*participate + 0.0002*secretariat + 0.0002*military + 0.0002*amendment + 0.0002*negative + 0.0002*competent + 0.0002*yell + 0.0002*crush
+Topic 5:
+0.0002*magnitude + 0.0002*envoy + 0.0002*falcon + 0.0002*topic + 0.0002*official + 0.0002*expected + 0.0002*largely + 0.0002*rely + 0.0002*surviving + 0.0002*certified
+Topic 6:
+0.0002*conspiracy + 0.0002*blank + 0.0002*senate + 0.0002*flood + 0.0002*numerous + 0.0002*pit + 0.0002*input + 0.0002*racing + 0.0002*daughter + 0.0002*proceedings
+Topic 7:
+0.0002*cooperative + 0.0002*fare + 0.0002*responsibility + 0.0002*laptop + 0.0002*prone + 0.0002*sprint + 0.0002*hatred + 0.0002*ion + 0.0002*boutique + 0.0002*disease
+Topic 8:
+0.0002*filing + 0.0002*sustain + 0.0002*honourable + 0.0002*consent + 0.0002*house + 0.0002*excellent + 0.0002*perfect + 0.0002*dairy + 0.0002*die + 0.0002*dad
+Topic 9:
+0.0002*ballet + 0.0002*emerge + 0.0002*primary + 0.0002*camping + 0.0002*court + 0.0002*ally + 0.0002*advise + 0.0002*defense + 0.0002*future + 0.0002*ultimate
