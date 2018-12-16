@@ -31,5 +31,7 @@ All the articles files have a WLP (Word-Lemma-PartOfSpeech) counterpart file con
 
 ## Workload repartition:
 Jean-Marc: initial cleaning of the data, analysis of the results, PCA and clustering;
+
 Luca: pre-processing for the LDA, implementation of the LDA in pyspark, coding and managing the scripts on the cluster, report writing;
+
 Christophe: initial cleaning of the data, implementation on the cluster, regrouping final results, report and presentation.
