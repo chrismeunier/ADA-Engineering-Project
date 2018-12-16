@@ -4,7 +4,7 @@ Jean-Marc Bejjani - Luca Montanelli - Christophe Muller
 ## Notebook & report
 The notebook containing the processes of this project is "Our process on the sample data.ipynb", indicatively you will need to import `numpy`, `pyplot`, `pandas`, `pyspark`, `findspark`, `scikit` and `datetime` if you wish to run it.
 
-The report is obviously "Topic_analysis_of_online_newspapers.tex"
+The report is found on "Topic_analysis_of_online_newspapers.pdf".
 
 ## Abstract
 In the current media context, access to objective information is becoming more and more critical. People want to build strong opinions on various subjects that have direct impact on their lives.
@@ -13,7 +13,6 @@ The goal of our project is to use data analysis techniques on a large newspapers
 By analysing the articles from various newspapers coming from different locations across time, we will create a topic model of our data using topic modeling techniques like Latent Dirichlet Allocation.
 In our implementation we will use the `pyspark` library to train LDA models directly on the cluster.
 From this topic model we want to track the evolution of these topics across time and location. This will give people an insight on the past and current importance of a certain topic they might be interested in.
-
 
 ## Research questions
   - Have some big events changed the way newspapers perceive topics? We will try to find an event with a large impact on a specific topic and compare the sentiment of articles related to this topic before and after the event.
