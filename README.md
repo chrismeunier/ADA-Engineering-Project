@@ -30,8 +30,8 @@ The articles themselves are stored in files classified according to the year, mo
 All the articles files have a WLP (Word-Lemma-PartOfSpeech) counterpart file containing the ordered list of all words used in these articles. With each word is found its lemma and PoS. These files are the most promising way to treat our data since we can directly work on the lemmas as if it was a pre-processed dataset with more simple and meaningful words.
 
 ## Workload repartition:
-Jean-Marc: initial cleaning of the data, analysis of the results, PCA and clustering;
+Jean-Marc: ideation, initial cleaning of the data, implementation of LDA in pyspark, analysis of the results (PCA and clustering), writing results;
 
-Luca: pre-processing for the LDA, implementation of the LDA in pyspark, coding and managing the scripts on the cluster, report writing;
+Luca: pre-processing/cleaning for LDA, implementation of LDA in pyspark, coding and managing the scripts on the cluster, writing LDA;
 
-Christophe: initial cleaning of the data, implementation on the cluster, regrouping final results, report and presentation.
+Christophe: initial cleaning of the data, initial implementation on the cluster, regrouping final results, writing introduction and conclusion, presentation.
