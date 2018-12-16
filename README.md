@@ -1,7 +1,4 @@
-
-Participation of each of us in the tasks of the project
-
-# Topic analysis of online newspapers
+# ADA 2018 project - Topic analysis of online newspapers
 Jean-Marc Bejjani - Luca Montanelli - Christophe Muller
 
 ## Notebook & report
@@ -33,7 +30,6 @@ The articles themselves are stored in files classified according to the year, mo
 All the articles files have a WLP (Word-Lemma-PartOfSpeech) counterpart file containing the ordered list of all words used in these articles. With each word is found its lemma and PoS. These files are the most promising way to treat our data since we can directly work on the lemmas as if it was a pre-processed dataset with more simple and meaningful words.
 
 ## Workload repartition:
-Jean-Marc: ;
-Luca: ;
-Christophe: 
-
+Jean-Marc: initial cleaning of the data, analysis of the results, PCA and clustering;
+Luca: pre-processing for the LDA, implementation of the LDA in pyspark, coding and managing the scripts on the cluster, report writing;
+Christophe: initial cleaning of the data, implementation on the cluster, regrouping final results, report and presentation.
